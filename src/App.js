@@ -1,25 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import Examen from './Examen/Examen';
+import Student from './Student/Student';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () =>{
+  return <>
+    <Student name="Tigran" surname="Harutyunyan">
+      <Examen 
+        title = "Math"
+        mid1 = {18}
+        mid2 = {14}
+        absences = {3}
+      />
+      <Examen 
+        title = "JavaScript"
+        mid1 = {[]}
+        mid2 = {null}
+        absences = {"1"}
+      />  
+      <Examen/>
+    </Student>
+  </>
 }
 
 export default App;

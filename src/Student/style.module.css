@@ -1,0 +1,15 @@
+.stud{
+    font-family: sans-serif;
+    background: #cddc39;
+    padding: 20px 30px;
+    width: 80%;
+    margin: auto;
+}
+.stud h2{
+    text-align: center;
+    text-transform: uppercase;
+}
+.examens{
+    display: flex;
+    justify-content: space-between;
+}
